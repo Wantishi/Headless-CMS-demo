@@ -9,7 +9,7 @@ export class Books extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://76933731ebcd.ngrok.io/wp-json/wp/v2/books/')
+        axios.get('http://www.fishinasubmarine.com/wp-json/wp/v2/books/')
         .then(res => this.setState({
             books: res.data,
             isLoaded: true

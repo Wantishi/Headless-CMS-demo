@@ -16,8 +16,8 @@ export class BookItems extends Component {
 
    componentDidMount () {
        const {featured_media, author} = this.props.book;
-       const getImageUrl = axios.get(`http://76933731ebcd.ngrok.io//wp-json/wp/v2/media/${featured_media}`);
-       const getAuthor = axios.get(`http://76933731ebcd.ngrok.io//wp-json/wp/v2/users/${author}`);
+       const getImageUrl = axios.get(`http://www.fishinasubmarine.com/wp-json/wp/v2/media/${featured_media}`);
+       const getAuthor = axios.get(`http://www.fishinasubmarine.com/wp-json/wp/v2/users/${author}`);
       
        Promise.all([getImageUrl, getAuthor]).then(res => {
 
